@@ -16,25 +16,29 @@
     iframe {
       border: none;
       width: 100vw;
-      height: calc(100vh - 40px); /* faixa azul menor */
+      height: calc(100vh - 30px); /* faixa azul menor ainda */
     }
 
     .legenda {
-      height: 40px; /* menor altura */
-      background: #002244; /* azul escuro um pouco mais claro que antes */
-      color: #eee; /* texto mais claro */
-      font-size: 22px; /* menor fonte para caber melhor */
+      height: 30px; /* diminuiu bastante */
+      background: #002244; /* azul escuro */
+      color: #eee; /* texto claro */
+      font-size: 16px; /* menor fonte */
       display: flex;
       align-items: center;
       justify-content: center;
       font-family: Arial, sans-serif;
-      letter-spacing: 1px;
+      letter-spacing: 0.5px;
     }
 
     .legenda span {
-      margin: 0 15px;
+      margin: 0 8px; /* menos espaçamento */
       font-weight: 600;
       color: #eee;
+      white-space: nowrap; /* impede quebra */
+      display: flex;
+      align-items: center;
+      gap: 4px; /* espaço entre emoji e texto */
     }
 
     /* Destaque para vermelho e azul */
@@ -54,11 +58,11 @@
   ></iframe>
 
   <div class="legenda">
-    <span class="azul">🔵 = Manutenção</span>
-    <span>🟢 = Produzindo</span>
-    <span>⚪ = Sem apontamento</span>
-    <span class="vermelho">🔴 = Parada</span>
-    <span>🟡 = Setup</span>
+    <span class="azul">🔵 Manutenção</span>
+    <span>🟢 Produzindo</span>
+    <span>⚪ Sem apontamento</span>
+    <span class="vermelho">🔴 Parada</span>
+    <span>🟡 Setup</span>
   </div>
 </body>
 </html>
